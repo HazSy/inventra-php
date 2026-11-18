@@ -1,0 +1,34 @@
+{
+    "name": "hazsy/inventra",
+    "description": "Gestor de inventario con PHP 8, MySQL y PDO — arquitectura MVC sin frameworks",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public",
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

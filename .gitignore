@@ -1,0 +1,23 @@
+# Dependencias
+/vendor/
+
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Herramientas y cachés
+.phpunit.cache/
+.phpunit.result.cache
+/build/
+coverage/
+
+# IDE y sistema
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
